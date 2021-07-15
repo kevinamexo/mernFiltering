@@ -1,0 +1,31 @@
+###
+POST http://localhost:8000/api/v1/bootcamps
+Content-Type: application/json
+
+{
+    "name": "Bootcamp Five",
+    "description":"Bootcamp Five description",
+    "rating":4.4,
+    "price": 399.99
+}
+
+
+###
+GET http://localhost:8000/api/v1/bootcamps?price[lte]=900&sort=-price
+Content-Type: application/json
+
+
+
+###
+PUT http://localhost:8000/api/v1/bootcamps/60f0a48416e45f1f2c1e0e7e
+Content-Type: application/json
+
+{
+    "rating":4.8,
+    "description": "Bootcamp One description"
+}
+
+###
+DELETE http://localhost:8000/api/v1/bootcamps/60f0a7d515fa9a1b7c5d71cb
+Content-Type: application/json
+
