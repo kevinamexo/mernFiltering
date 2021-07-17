@@ -3,15 +3,15 @@ POST http://localhost:8000/api/v1/bootcamps
 Content-Type: application/json
 
 {
-    "name": "Bootcamp Five",
-    "description":"Bootcamp Five description",
+    "name": "Bootcamp Six",
+    "description":"Bootcamp Six description",
     "rating":4.4,
     "price": 399.99
 }
 
 
 ###
-GET http://localhost:8000/api/v1/bootcamps?price[lte]=900&sort=-price
+GET http://localhost:8000/api/v1/bootcamps?price[lte]=900&sort=price
 Content-Type: application/json
 
 
